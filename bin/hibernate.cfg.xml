@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+ 
+
+<hibernate-configuration>
+
+    <session-factory>
+		<!-- <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/hexDBLocal</property>
+        <property name="hibernate.connection.username">seamfix</property>
+        <property name="hibernate.connection.password">k0l0</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="hbm2ddl.auto">update</property> -->
+        <mapping class="com.sf.biocapture.entity.PassportData"/>
+        <mapping class="com.sf.biocapture.entity.BasicData"/>
+        <mapping class="com.sf.biocapture.entity.State"/>
+        <mapping class="com.sf.biocapture.entity.Zone"/>
+        <mapping class="com.sf.biocapture.entity.Region"/>
+        <mapping class="com.sf.biocapture.entity.FingerPrintImage"/>
+        <mapping class="com.sf.biocapture.entity.WsqImage"/>
+        <mapping class="com.sf.biocapture.entity.UserId"/>
+        <mapping class="com.sf.biocapture.entity.Country"/>
+
+    </session-factory>
+
+</hibernate-configuration>
